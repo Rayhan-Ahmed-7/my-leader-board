@@ -25,9 +25,10 @@ a{
      justify-content:center;
  }
  header .container{
-     max-width:880px;
+     width:880px;
      display:flex;
-    justify-content:space-between;
+     justify-content:space-between;
+     
  }
  .logo{
      display:flex;
@@ -288,6 +289,9 @@ footer{
 /* responsive design */
 
 @media (max-width:668px){
+    header .container{
+        padding:0 10px;
+    }
     .top-section{
         max-width:650px;
     }
