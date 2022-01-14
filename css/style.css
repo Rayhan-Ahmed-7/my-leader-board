@@ -169,7 +169,7 @@ section{
 
 }
 .blog h3{
-    font-size:20px;
+    font-size:18px;
     color:rgb(51, 51, 51);
     font-family:'Poppins',sans-serif;
     user-select: none;
@@ -289,6 +289,22 @@ footer{
 
 /* responsive design */
 
+@media(min-width:668px) and (max-width:1000px){
+    header .container{
+        padding:0 10px;
+    }
+    .blogs{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .courses{
+        grid-template-columns:repeat(2,330px);
+        justify-content:space-around;
+    }
+    .course img{
+        width:100%;
+    }
+}
+
 @media(max-width:668px){
     header .container{
         flex-direction: column;
@@ -317,7 +333,10 @@ footer{
         height:90px;
     }
     .blogs-section h3{
-        font-size:18px;
+        font-size:16px;
+    }
+    .blogs-section .blog-author{
+        font-size:14px;
     }
     .courses{
         grid-template-columns:repeat(1,330px);
